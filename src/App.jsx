@@ -1,13 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Libros from "./componentsAPI/Libros";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./componentsAPI/Navbar";
+import PaginaLibro from "./componentsAPI/PaginaLibro";
+
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-
-      <Libros />
+      <Routes>
+        <Route path="/buscador" element={<Libros />} />
+        <Route path="/paginaLibro" element={<PaginaLibro/>} />
+      </Routes>
     </BrowserRouter>
   );
 }

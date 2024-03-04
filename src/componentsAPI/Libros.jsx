@@ -15,6 +15,8 @@ const Libros = () => {
         })
     }, [])
 
+    console.log(libros)
+
     return (
         <div>
             {
@@ -23,7 +25,7 @@ const Libros = () => {
                 libros.map((libro) => {
                     return (
                         <div>
-                            <Libro key={libro.key} libro={libro} />
+                            <Libro libro={libro} />
                         </div>
                     )
                 })

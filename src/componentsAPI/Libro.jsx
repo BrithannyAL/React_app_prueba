@@ -1,3 +1,5 @@
+import { Link, useParams } from "react-router-dom";
+
 const Libro = ({libro}) => {
 
     return (
@@ -9,6 +11,7 @@ const Libro = ({libro}) => {
             <p>Año de publicación: {libro.first_publish_year}</p>
             <p>Cantidad de páginas: {libro.number_of_pages_median}</p>
             <p>Putaje: {libro.ratings_average}</p>
+            <a className="ver_mas" href={`/libro/${libro.key}`}>Ver mas</a>
             <hr />
         </div>
     )

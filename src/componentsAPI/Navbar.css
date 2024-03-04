@@ -1,0 +1,25 @@
+.navbar {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: plum;
+    border-bottom: 2px solid black;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu_link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.menu_link:hover {
+    text-decoration: underline;
+}
